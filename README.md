@@ -1,4 +1,4 @@
-LocoMail Email Testing
+Python Email Dissector
 ======================
 
 Copyright 2011 Trent Richardson
