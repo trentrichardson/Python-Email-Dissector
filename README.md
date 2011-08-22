@@ -35,7 +35,7 @@ To Run on Linux:
 ----------------
 - install pywebkit (via package manager if possible)
 - install gtksourceview2
-run: python main.py
+- main.py
 
 To run on Windows:
 ------------------
@@ -43,7 +43,7 @@ To run on Windows:
 - install these packages (specifically gtk, gtksourceview, webkit):
 	http://opensourcepack.blogspot.com/2011/01/conservative-all-in-one-pygtk-installer.html
 	(the pygtk_aio-2011_win32_installer_py25-27-rev5.exe is the latest as of 2011-08-17)
-run main.py
+- run main.py
 
 To Run on Mac:
 --------------
