@@ -30,6 +30,7 @@ import threading
 
 from EDHelpers import EDData
 from EDHelpers import EDServer
+from EDHelpers import EDInspector
 
 
 class EmailDissector:
@@ -98,6 +99,10 @@ class EmailDissector:
 		builder.get_object("HTMLScrollWindow").add_with_viewport(self.webkitbrowser)
 		self.webkitbrowser.show()
 		self.webkitbrowser.load_string(self._current_html, "text/html", "utf-8", "test")
+		#self.webkitbrowser.set_view_source_mode(True)
+		self.webkitbrowserinspector = EDInspector.Inspector(self.webkitbrowser.get_web_inspector())
+		self.webkitbrowsersettings = self.webkitbrowser.get_settings()
+		self.webkitbrowsersettings.set_property("enable-developer-extras", True)
 		#self.webkitbrowser.load_uri("http://google.com")
 		
 		#Add source view
